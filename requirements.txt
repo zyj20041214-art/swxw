@@ -1,0 +1,29 @@
+# =====================================
+# Teach For Australia AI Fairness Dashboard
+# =====================================
+
+# Core
+streamlit>=1.38.0
+pandas>=2.2.0
+numpy>=1.26.0
+
+# Visualization
+plotly>=5.23.0
+
+# Machine Learning
+scikit-learn>=1.4.0
+
+# PDF Parsing
+PyPDF2>=3.0.0
+pymupdf4llm>=0.0.6
+fitz>=0.0.1  # some environments alias PyMuPDF as fitz
+
+# AI Integration
+anthropic>=0.20.0
+
+# Utilities
+typing-extensions>=4.12.0
+
+# Optional (for local testing)
+pytest>=8.2.0
+
