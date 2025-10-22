@@ -30,7 +30,7 @@ if "ANTHROPIC_API_KEY" not in os.environ:
 # =============================
 ETHNICITIES_LIST = [
     'Australian', 'Aboriginal', 'Torres Strait Islander', 'British',
-    'Indian', 'Chinese', 'New Zealand', 'Filipino',
+    'Indian', 'Chinese', 'New Zealander', 'Filipino',
     'Vietnamese', 'South African', 'Other'
 ]
 
@@ -101,7 +101,7 @@ Extract the following information from this resume and return it as a valid JSON
 Required fields:
 - cohort: (integer) Year they might join TFA, default to 2023
 - gender: (string) One of: "Male", "Female", "Non-binary" - infer from name/pronouns, default "Female"
-- ethnicity: (string) One of: "Australian", "Aboriginal", "Torres Strait Islander", "British", "Indian", "Chinese", "New Zealand", "Filipino", "Vietnamese", "South African", "Other"
+- ethnicity: (string) One of: "Australian", "Aboriginal", "Torres Strait Islander", "British", "Indian", "Chinese", "New Zealander", "Filipino", "Vietnamese", "South African", "Other"
 - degree_major: (string) One of: "Education", "Commerce", "STEM", "Science", "Arts", "Other"
 - gpa: (float) GPA on 2.0-4.0 scale. If percentages: 50-64%=2.0, 65-74%=2.5, 75-84%=3.0, 85-100%=4.0. If HD/D/C/P: HD=4.0, D=3.0, C=2.5, P=2.0
 - teaching_experience: (string) One of: "<1 year", "1-3 years", "3+ years"
@@ -486,7 +486,7 @@ def load_data():
         # 3. Ethnicity - simplified to 11 main categories
         ethnicity_simplified = [
             'Australian', 'Aboriginal', 'Torres Strait Islander', 'British',
-            'Indian', 'Chinese', 'New Zealand', 'Filipino',
+            'Indian', 'Chinese', 'New Zealander', 'Filipino',
             'Vietnamese', 'South African', 'Other'
         ]
         ethnicity_probs = [0.662, 0.019, 0.019, 0.035, 0.034,
